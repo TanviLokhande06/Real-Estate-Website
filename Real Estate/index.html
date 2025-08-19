@@ -1,0 +1,1059 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/fontawesome.min.css"
+        integrity="sha512-v8QQ0YQ3H4K6Ic3PJkym91KoeNT5S3PnDKvqnwqFD1oiqIl653crGZplPdU5KKtHjO0QKcQ2aUlQZYjHczkmGw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>Bento Works</title>
+</head>
+
+<body>
+
+    <!-- Header Section Starts Here -->
+    <header>
+        <div class="header_container">
+            <div class="header_col">
+                <div class="logo_container">
+                    <a href="">
+                        <img src="./assets/logo.png" alt="logo" class="logo">
+                    </a>
+                </div>
+            </div>
+            <div class="header_col">
+                <nav class="nav_container" id="navbar">
+                    <ul class="nav_list_container">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#properties">Properties</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>
+                    <button class="menu_close_btn" id="close_menu_btn">
+                        <i class="fa-solid fa-xmark"></i>
+                    </button>
+                </nav>
+            </div>
+            <div class="header_col">
+                <button class="quote_btn">Request a Quote</button>
+                <button class="menu_open_btn" id="open_menu_btn">
+                    <i class="fa-solid fa-bars"></i>
+                </button>
+            </div>
+        </div>
+    </header>
+    <!-- Header Section Ends Here -->
+
+    <!-- Hero Section Starts Here -->
+    <section class="hero_section" id="home">
+        <div class="hero_container">
+            <div class="hero_text_container">
+                <h3 class="hero_text">Find Your Dream Home with Ease!</h3>
+                <p class="hero_desc">Discover properties that suit your lifestyle and budget. Whether you're buying,
+                    selling, or renting,
+                    we've got the perfect solution for you. Your next home is just a search away!
+                </p>
+            </div>
+            <div class="search_form_container">
+                <div class="search_type_container">
+                    <div class="search_type_inner">
+                        <button class="search_type_btn active">For Rent</button>
+                        <button class="search_type_btn">For Sale</button>
+                    </div>
+                </div>
+                <form action="#" class="search_form">
+                    <fieldset class="search_input_container">
+                        <label for="keyword">Keyword</label>
+                        <input type="text" class="search_input" placeholder="Keyword" id="keyword">
+                    </fieldset>
+                    <fieldset class="search_input_container">
+                        <label for="propertytype">Property Type</label>
+                        <select name="propertytype" class="search_input" id="propertytype">
+                            <option value="#">Property Type</option>
+                            <option value="Single-Family Home">Single-Family Home</option>
+                            <option value="Apartment">Apartment</option>
+                            <option value="Condominium">Condominium</option>
+                            <option value="Townhouse">Townhouse</option>
+                            <option value="Villa">Villa</option>
+                            <option value="Bungalow">Bungalow</option>
+                            <option value="Penthouse">Penthouse</option>
+                        </select>
+                    </fieldset>
+                    <fieldset class="search_input_container">
+                        <label for="keyword">Location</label>
+                        <input type="text" class="search_input" placeholder="Location" id="keyword">
+                    </fieldset>
+                    <fieldset class="search_input_container">
+                        <label for="keyword"></label>
+                        <button class="search_form_btn">Find My Home</button>
+                    </fieldset>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Hero Section Ends Here -->
+
+    <!-- Featured Properties Starts Here -->
+    <section class="featured_properties_section">
+        <div class="featured_properties_container">
+            <div class="title_container">
+                <h5 class="subtitle">Featured Properties</h5>
+                <h2 class="title">Featured Properties Just for You!</h2>
+            </div>
+            <div class="content_container">
+                <div class="featured_properties_menu_container">
+                    <ul class="featured_properties_menu_list">
+                        <li><button class="active" data-tab="tab-1">View All</button></li>
+                        <li><button data-tab="tab-2">Apartment</button></li>
+                        <li><button data-tab="tab-3">Office</button></li>
+                        <li><button data-tab="tab-4">Villa</button></li>
+                        <li><button data-tab="tab-5">House</button></li>
+                    </ul>
+                </div>
+                <div class="featured_tab active" id="tab-1">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/1 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Modern Family Home</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:1,150</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$5845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/2 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Downtown Apartment</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:950</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$7845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/3 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Luxury Villa</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$15845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/4 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Cozy Bungalow</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$2845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/5 (1).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Suburban Townhouse</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$12,845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/6 (1).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Charming Cottage</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$12,845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/7.jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Spacious Penthouse</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$12,845.00</h5>
+                            </div>
+                        </div>
+                    </div> -->
+                        <!-- <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/8.jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Modern Loft</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$945.00</h5>
+                            </div>
+                        </div>
+                    </div> -->
+                    </div>
+                </div>
+                <div class="featured_tab" id="tab-2">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/3 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Luxury Villa</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$15845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/4 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Cozy Bungalow</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$2845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_tab" id="tab-3">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/7.jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Spacious Penthouse</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$12,845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/8.jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Modern Loft</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$945.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_tab" id="tab-4">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/4 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Cozy Bungalow</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$2845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/5 (1).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Suburban Townhouse</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$12,845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/6 (1).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Charming Cottage</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$12,845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/8.jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Modern Loft</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$945.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="featured_tab" id="tab-5">
+                    <div class="featured_properties_content_container">
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/1 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Modern Family Home</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:1,150</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$5845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="product_card">
+                            <div class="img_container">
+                                <img src="assets/2 (2).jpeg" alt="product" class="produc_img">
+                            </div>
+                            <div class="text_container">
+                                <a href="#">
+                                    <h3>Downtown Apartment</h3>
+                                </a>
+                                <ul class="product_featured_list">
+                                    <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                    <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                    <li><i class="fa-solid fa-expand"></i> Sqft:950</li>
+                                </ul>
+                                <div class="price_container">
+                                    <h5>$7845.00</h5>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Featured Properties Ends Here -->
+
+    <!-- Services Section Starts Here -->
+    <section class="services_section" id="services">
+        <div class="services_container">
+            <div class="title_container">
+                <h5 class="subtitle">Our Services</h5>
+                <h2 class="title">What We Offer</h2>
+            </div>
+            <div class="services_content_cantainer">
+                <div class="services_row">
+                    <div class="services_col">
+                        <div class="img_container">
+                            <img src="assets/1.png" alt="service">
+                        </div>
+                    </div>
+                    <div class="services_col">
+                        <div class="text_container">
+                            <h4>Buy a New Home</h4>
+                            <p class="sub-desc">Simplify your home-buying journey with expert guidance.</p>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime porro
+                                numquam sapiente, repudiandae, quia dignissimos sequi minus, at aspernatur qui? Soluta
+                                provident unde culpa, optio corrupti natus quidem consequuntur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_row">
+                    <div class="services_col">
+                        <div class="img_container">
+                            <img src="assets/2.jpg" alt="service">
+                        </div>
+                    </div>
+                    <div class="services_col">
+                        <div class="text_container">
+                            <h4>Sell a Home</h4>
+                            <p class="sub-desc">Get the best value for your property with our proven strategies.</p>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime porro
+                                numquam sapiente, repudiandae, quia dignissimos sequi minus, at aspernatur qui? Soluta
+                                provident unde culpa, optio corrupti natus quidem consequuntur.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="services_row">
+                    <div class="services_col">
+                        <div class="img_container">
+                            <img src="assets/3.jpg" alt="service">
+                        </div>
+                    </div>
+                    <div class="services_col">
+                        <div class="text_container">
+                            <h4>Rent a Home</h4>
+                            <p class="sub-desc">Find rental properties that feel like home.</p>
+                            <p class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga maxime porro
+                                numquam sapiente, repudiandae, quia dignissimos sequi minus, at aspernatur qui? Soluta
+                                provident unde culpa, optio corrupti natus quidem consequuntur.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Services Section Ends Here -->
+
+    <!-- Cites Section Starts Here -->
+    <div class="cities_section">
+        <div class="cities_container">
+            <div class="title_container">
+                <h5 class="subtitle">Explore Cities</h5>
+                <h2 class="title">Discover the Best Locations to Call Home</h2>
+            </div>
+            <div class="cities_content_container">
+                <div class="swiper citiesSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="cities_card">
+                                <div class="img_container">
+                                    <img src="assets/1 (1).jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Naperville</h4>
+                                    <p>300 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities_card">
+                                <div class="img_container">
+                                    <img src="assets/2 (1).jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Pembroke Pines</h4>
+                                    <p>150 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities_card">
+                                <div class="img_container">
+                                    <img src="assets/3 (1).jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Toledo</h4>
+                                    <p>250 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities_card">
+                                <div class="img_container">
+                                    <img src="assets/4 (1).jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Paris</h4>
+                                    <p>111 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities_card">
+                                <div class="img_container">
+                                    <img src="assets/5.jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Miami</h4>
+                                    <p>85 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="cities_card">
+                                <div class="img_container">
+                                    <img src="assets/6.jpeg" alt="city">
+                                </div>
+                                <div class="text_container">
+                                    <h4>Austin</h4>
+                                    <p>14 Properties</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cites Section Ends Here -->
+
+    <!-- Top Properties Starts Here -->
+    <section class="top_properties_section" id="properties">
+        <div class="top_properties_container">
+            <div class="title_container">
+                <h5 class="subtitle">Top Properties</h5>
+                <h2 class="title">Explore Our Top-Rated Listings</h2>
+            </div>
+            <div class="content_container">
+                <div class="top_properties_content_container">
+                    <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/7.jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Spacious Penthouse</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:2,800</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$12,845.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/8.jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Modern Loft</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:1</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:700</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$945.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/3 (2).jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Luxury Villa</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:5</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:4</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:3,200</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$15845.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/4 (2).jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Cozy Bungalow</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:3</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:2</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:1,400</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$2845.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/5 (1).jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Suburban Townhouse</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:4</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:3</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:2,000</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$12,845.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="product_card">
+                        <div class="img_container">
+                            <img src="assets/6 (1).jpeg" alt="product" class="produc_img">
+                        </div>
+                        <div class="text_container">
+                            <a href="#">
+                                <h3>Charming Cottage</h3>
+                            </a>
+                            <ul class="product_featured_list">
+                                <li><i class="fa-solid fa-bed"></i> Beds:2</li>
+                                <li><i class="fa-solid fa-bath"></i> Baths:1</li>
+                                <li><i class="fa-solid fa-expand"></i> Sqft:850</li>
+                            </ul>
+                            <div class="price_container">
+                                <h5>$12,845.00</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Top Properties Ends Here -->
+
+    <!-- About Section Starts Here -->
+    <section class="about_section" id="about">
+        <div class="about_container">
+            <div class="title_container">
+                <h5 class="subtitle">About US</h5>
+                <h2 class="title">
+                    Your Trusted Partner in Real Estate</h2>
+            </div>
+            <div class="content_container">
+                <div class="about_col">
+                    <div class="img_container">
+                        <img src="assets/about.jpg" alt="about">
+                    </div>
+                </div>
+                <div class="about_col">
+                    <div class="text_container">
+                        <p class="desc">At Bento Works, we are dedicated to helping you find the perfect place to call
+                            home.
+                            With years of experience in the real estate market, our team specializes in buying, selling,
+                            and
+                            renting properties tailored to meet your unique needs. We pride ourselves on delivering
+                            exceptional service, transparency, and expert guidance throughout your real estate journey.
+                        </p>
+                        <p class="content">Whether you're searching for your dream home, looking to sell at the best
+                            value,
+                            or seeking an ideal rental, we are here to make the process seamless and stress-free. Let us
+                            turn your property goals into reality.</p>
+                        <blockquote>"Your Home. Your Future. Our Commitment."</blockquote>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- About Section Ends Here -->
+
+    <!-- Testimonial Section Starts Here -->
+     <section class="testimonial_section">
+        <div class="testimonial_container">
+            <div class="title_container">
+                <h5 class="subtitle">Our Testimonials</h5>
+                <h2 class="title">
+                  What Our Clients Say</h2>
+            </div>
+            <div class="content_container">
+                <div class="swiper TestimonialSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="testimonial_card">
+                                <div class="top">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                                <div class="center">
+                                    <h5>"We found our dream home within weeks. The team was amazing!"</h5>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom_row">
+                                        <div class="bottom_col">
+                                            <div class="img_container">
+                                                <img src="assets/01.jpeg" alt="reviewer">
+                                            </div>
+                                        </div>
+                                        <div class="bottom_col">
+                                            <h5>Emily & John</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="testimonial_card">
+                                <div class="top">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                                <div class="center">
+                                    <h5>"Selling my property was seamless thanks to their expertise."</h5>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom_row">
+                                        <div class="bottom_col">
+                                            <div class="img_container">
+                                                <img src="assets/02.jpeg" alt="reviewer">
+                                            </div>
+                                        </div>
+                                        <div class="bottom_col">
+                                            <h5>Mike D.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="swiper-slide">
+                            <div class="testimonial_card">
+                                <div class="top">
+                                    <i class="fa-solid fa-quote-right"></i>
+                                </div>
+                                <div class="center">
+                                    <h5>"I found the perfect rental property in no time!"</h5>
+                                </div>
+                                <div class="bottom">
+                                    <div class="bottom_row">
+                                        <div class="bottom_col">
+                                            <div class="img_container">
+                                                <img src="assets/03.jpeg" alt="reviewer">
+                                            </div>
+                                        </div>
+                                        <div class="bottom_col">
+                                            <h5>Sophia R.</h5>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+    <!-- Testimonial Section ENds Here -->
+
+    <!-- Contact Section Starts Here -->
+    <section class="contact_section" id="contact">
+        <div class="contact_container">
+            <div class="contact_col">
+                <div class="title_container">
+                    <h5 class="subtitle">Contact US</h5>
+                    <h2 class="title">
+                        Get in Touch with Us Today!</h2>
+                </div>
+                <div class="contact_form_container">
+                    <form action="#">
+                        <fieldset class="input_row">
+                            <label for="name">Name</label>
+                            <input type="text" name="name" placeholder="Enter your Name..." id="name">
+                        </fieldset>
+                        <fieldset class="input_row">
+                            <label for="email">Email</label>
+                            <input type="text" name="email" placeholder="Enter your Email..." id="email">
+                        </fieldset>
+                        <fieldset class="input_row">
+                            <label for="phone">Phone</label>
+                            <input type="text" name="phone" placeholder="Enter your Phone Number..." id="phone">
+                        </fieldset>
+                        <fieldset class="input_row">
+                            <label for="message">Message</label>
+                            <textarea type="text" name="message" placeholder="Enter your Message..."
+                                id="message"></textarea>
+                        </fieldset>
+                        <button class="contact_submit_btn" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+            <div class="contact_col">
+                <div class="title_container">
+                    <h5 class="subtitle">More Info</h5>
+                    <h2 class="title">
+                        Additional Info About Us</h2>
+                </div>
+                <div class="contact_info_container">
+                    <ul class="contact_info_list">
+                        <li>
+                            <div class="cnt_icon_container">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <div class="cnt_data_container">
+                                <h5>+1 123-456-7890</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cnt_icon_container">
+                                <i class="fa-solid fa-envelope"></i>
+                            </div>
+                            <div class="cnt_data_container">
+                                <h5>contact@yourrealestate.com</h5>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="cnt_icon_container">
+                                <i class="fa-solid fa-location-dot"></i>
+                            </div>
+                            <div class="cnt_data_container">
+                                <h5>Real Estate Blvd, Mumbai, Maharashtra, India</h5>
+                            </div>
+                        </li>
+                    </ul>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d241316.59505744715!2d72.8789412!3d19.08255545!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7c6306644edc1%3A0x5da4ed8f8d648c69!2sMumbai%2C%20Maharashtra!5e0!3m2!1sen!2sin!4v1755513356953!5m2!1sen!2sin"
+                        class="map" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Contact Section Ends Here -->
+
+    <!-- Meet Our Team Section Starts Here -->
+    <section class="team_section">
+        <div class="team_container">
+            <div class="title_container">
+                <h5 class="subtitle">Our Team</h5>
+                <h2 class="title">
+                    Meet the Experts Behind Your Real Estate Journey</h2>
+            </div>
+            <div class="content_container">
+                <div class="team_row">
+                    <div class="team_col">
+                        <div class="img_container">
+                            <img src="assets/1.jpeg" alt="team">
+                        </div>
+                        <div class="text_container">
+                            <h4>John Smith</h4>
+                            <p>Founder & Real Estate Specialist</p>
+                        </div>
+                    </div>
+                    <div class="team_col">
+                        <div class="img_container">
+                            <img src="assets/2.jpeg" alt="team">
+                        </div>
+                        <div class="text_container">
+                            <h4>Jane Doe</h4>
+                            <p>Client Relations Manager</p>
+                        </div>
+                    </div>
+                    <div class="team_col">
+                        <div class="img_container">
+                            <img src="assets/3.jpeg" alt="team">
+                        </div>
+                        <div class="text_container">
+                            <h4>James Brownwari</h4>
+                            <p>Property Consultant</p>
+                        </div>
+                    </div>
+                    <div class="team_col">
+                        <div class="img_container">
+                            <img src="assets/4.jpeg" alt="team">
+                        </div>
+                        <div class="text_container">
+                            <h4>Lisa White</h4>
+                            <p>Marketing Expert</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Meet Our Team Section Ends Here -->
+
+    <!-- Brand Section Starts Here -->
+    <section class="brand_section">
+        <div class="brand_container">
+            <div class="title_container">
+                <h2 class="title">Trusted By Over 150% Major Companies</h2>
+            </div>
+            <div class="content_container">
+                <div class="swiper brandSwiper">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="img_container">
+                                <img src="assets/1.svg" alt="client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_container">
+                                <img src="assets/2.svg" alt="client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_container">
+                                <img src="assets/3.svg" alt="client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_container">
+                                <img src="assets/4.svg" alt="client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_container">
+                                <img src="assets/5.svg" alt="client">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="img_container">
+                                <img src="assets/6.svg" alt="client">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Brand Section Ends Here -->
+
+    <!-- Footer Section Starts Here -->
+    <footer>
+        <div class="footer_container">
+            <nav class="footer_nav_container">
+                <ul class="nav_list_container">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Properties</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="copyright_container">
+                <p>2025 <i class="fa-regular fa-copyright"></i> Bento Works, All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer Section Ends Here -->
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/all.min.js"
+        integrity="sha512-b+nQTCdtTBIRIbraqNEwsjB6UvL3UEMkXnhzd8awtCYh0Kcsjl9uEgwVFVbhoj3uu1DO1ZMacNvLoyJJiNfcvg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/js/fontawesome.min.js"
+        integrity="sha512-j12pXc2gXZL/JZw5Mhi6LC7lkiXL0e2h+9ZWpqhniz0DkDrO01VNlBrG3LkPBn6DgG2b8CDjzJT+lxfocsS1Vw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
+</body>
+
+</html>
